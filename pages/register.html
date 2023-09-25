@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Place | Register</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/login.css">
+</head>
+<body>
+    <body>
+        <header>
+            <a href="../index.html">
+                <img class="logo" src="../assets/img/logo-removebg-preview.png" alt="Logo">
+            </a>
+            <nav class="navbar">
+                <div class="menu-label">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <ul class="navbar-list">
+                    <li><a href="../index.html#hero">Inicio</a></li>
+                    <li><a href="../index.html#about">Sobre Nosotros</a></li>
+                    <li><a href="../index.html#tienda">Tienda</a></li>
+                    <li><a href="../index.html#contact">Contacto</a></li>
+                    <li><a href="./login.html" class="login">Login</a></li>
+                    <li><a href="./register.html" class="register">Registrarme</a></li>
+                </ul>
+                <!-- <div class="cart-label">
+                    <i class="fa-solid fa-cart-shopping cart-icon"></i>
+                </div>
+    
+                <div class="cart">
+                    <h2>Tus pedidos</h2>
+                    <div class="cart-container"></div>
+    
+                    <span class="divider"></span>
+    
+                    <div class="cart-total">
+                        <p>Total:</p>
+                        <span class="total"></span>
+                    </div>
+                    <button class="btn-buy">Comprar</button>
+                    <button class="btn-delete">Vaciar carrito</button>
+                </div> -->
+                <div class="overlay"></div>
+            </nav>
+        </header>
+    
+        <main>
+            <form class="form" id="register-form">
+                <label for="username">Usuario</label>
+                <div class="form__field">
+                    <input type="text" id="username" >
+                    <small></small>
+                </div>
+                
+                <label for="email">Email</label>
+                <div class="form__field">
+                    <input type="email" id="email" >
+                    <small></small>
+                </div>
+                
+                <label for="password">Contraseña</label>
+                <div class="form__field">
+                    <input type="password" id="password" >
+                    <small></small>
+                </div>
+                
+                <input type="submit" class="btn-submit" value="Registrarse">
+                <a href="./login.html"><span>¿Ya tenés una cuenta? Iniciá sesión</span></a>
+            </form>
+        </main>
+    
+        <footer>
+            <div>
+                <ul class="footer-links">
+                    <li><a href="#">Políticas de privacidad</a></li>
+                    <li><a href="#">Trabajá con nosotros</a></li>
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                </ul>
+            </div>
+            <p>Todos los derechos reservados</p>
+        </footer>
+        <script src="../js/register.js"></script>
+    </body>
+</body>
+</html>

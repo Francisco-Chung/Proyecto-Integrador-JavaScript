@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Place</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <a href="./index.html">
+            <img class="logo" src="./assets/img/logo-removebg-preview.png" alt="Logo">
+        </a>
+        <nav class="navbar">
+            <div class="menu-label">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="navbar-list">
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#about">Sobre Nosotros</a></li>
+                <li><a href="#tienda">Tienda</a></li>
+                <li><a href="#contact">Contacto</a></li>
+                <li><a href="./pages/login.html" class="login">Login</a></li>
+                <li><a href="./pages/register.html" class="register">Registrarme</a></li>
+            </ul>
+            <div class="cart-label">
+                <i class="fa-solid fa-cart-shopping cart-icon"></i>
+            </div>
+
+            <div class="cart">
+                <h2>Tus pedidos</h2>
+                <div class="cart-container"></div>
+
+                <span class="divider"></span>
+
+                <div class="cart-total">
+                    <p>Total:</p>
+                    <span class="total"></span>
+                </div>
+                <button class="btn-buy">Comprar</button>
+                <button class="btn-delete">Vaciar carrito</button>
+            </div>
+            <div class="overlay"></div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>Disfruta tus mejores momentos con un café</h1>
+            <p>¡Vení a visitarnos, sigamos compartiendo nuestro amor por el café!</p>
+        </section>
+
+        <section id="about">
+            <h2>Sobre Nosotros</h2>
+            <div class="about-container">
+                <div class="about-info">
+                    <h3>Desde 1960, los mejores cafés del mundo cerca tuyo</h3>
+                    <p>Ofrecemos las mejores variedades de café, de primera calidad, acompañados por una gran propuesta
+                        gastronómica para que disfrutes de una experiencia distinta en un ambiente relajado.</p>
+                </div>
+                <img src="./assets/img/about-img.jpg" alt="Imagen about">
+            </div>
+        </section>
+
+        <section id="tienda">
+            <h2>Nuestro catálogo</h2>
+            <div class="categories">
+                <button class="category active">Todas</button>
+                <button class="category" data-category="Caliente">Cafés Calientes</button>
+                <button class="category" data-category="Frío">Cafés fríos</button>
+                <button class="category" data-category="Café en granos">Café en granos</button>
+            </div>
+            <div class="menu-container"></div>
+            <button class="btn-load">Ver Más</button>
+        </section>
+
+        <section id="contact">
+            <h2>Contáctanos</h2>
+            <div class="contact-container">
+                <div class="contact-form">
+                    <form id="form" action="">
+
+                        <div class="inputBox">
+                            <span class="fas fa-user"></span>
+                            <div class="form__field">
+                                <input type="text" placeholder="nombre" id="name">
+                                <small></small>
+                            </div>
+                        </div>
+
+                        <div class="inputBox">
+                            <span class="fas fa-envelope"></span>
+                            <div class="form__field">
+                                <input type="email" placeholder="email" id="email">
+                                <small></small>
+                            </div>
+                        </div>
+
+                        <div class="inputBox">
+                            <span class="fas fa-phone"></span>
+                            <div class="form__field">
+                                <input type="number" placeholder="número de contacto" id="phone">
+                                <small></small>
+                            </div>
+                        </div>
+
+                        <div class="inputBox">
+                            <span class="fa-solid fa-message"></span>
+                            <div class="form__field">
+                                <textarea cols="25" rows="4" placeholder="dejanos tu mensaje" id="textarea"></textarea>
+                                <small></small>
+                            </div>
+                        </div>
+                        <input type="submit" value="Enviar" class="btn-send">
+                        <div id="message"></div>
+
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <p><i class="fas fa-location-dot"></i>Avenida Random 123</p>
+                    <p><i class="fas fa-envelope"></i>coffee_place@gmail.com</p>
+                    <p><i class="fas fa-phone"></i>15 5555 5555</p>
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+
+                </div>
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26259.21165728335!2d-58.6033108256836!3d-34.64456299999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7e5e57a3401%3A0xc581247b159bea95!2sStarbucks!5e0!3m2!1sen!2sar!4v1686964537185!5m2!1sen!2sar"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <ul class="footer-links">
+                <li><a href="#">Políticas de privacidad</a></li>
+                <li><a href="#">Trabajá con nosotros</a></li>
+                <li><a href="#">Preguntas frecuentes</a></li>
+            </ul>
+        </div>
+        <p>Todos los derechos reservados</p>
+    </footer>
+    <div class="add-modal"></div>
+    <script src="./js/data.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
