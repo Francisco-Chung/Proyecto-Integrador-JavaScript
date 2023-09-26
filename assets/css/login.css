@@ -95,6 +95,12 @@ input:focus {
     font-weight: 600;
 }
 
+@media (max-width:582px) {
+    .fa-bars {
+        padding-right: 20px;
+    } 
+}
+
 @media (max-width:576px) {
     .form {
         height: 92vh;

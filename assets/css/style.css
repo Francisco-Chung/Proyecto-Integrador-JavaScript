@@ -457,11 +457,13 @@ form .btn-send {
     max-width: 600px;
 }
 
-.form__field.success input {
+.form__field.success input,
+.form__field.success textarea {
     border: 2px solid green;
 }
 
-.form__field.error input {
+.form__field.error input,
+.form__field.error textarea {
     border: 2px solid red;
 }
 
